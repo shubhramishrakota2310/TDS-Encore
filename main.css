@@ -1,17 +1,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap');
 html {margin:0px; padding:0px; width:100%; height:100%;}
 body { color:#252627; font-size:1em; font-family:'Poppins', sans-serif; margin:0px; padding:0px; width:100%; height:100%; background:url('images/bg2.jpg') no-repeat center fixed; background-size: cover;}
 img {border:none; }
 /*** GENERAL ***/
-h1 { font-family:'Poppins', sans-serif; margin:0px; padding:0px; font-weight:bolder; font-style:normal; font-smooth:always; font-size:2.5em; letter-spacing: .01em; word-spacing: .1em;}
-h2 { font-family:'Poppins', sans-serif; margin:0px; padding:0px; font-weight:bold; font-style:normal; font-smooth:always; font-size:1.6em;}
-h3 { font-family:'Poppins', sans-serif; margin:0px; padding:0px; font-weight:normal; font-style:normal; font-smooth:always; font-size:1em;}
+h1 { font-family:'Poppins', sans-serif; margin:0px; padding:0px; font-weight:800; font-style:normal; font-smooth:always; font-size:2.5em;  word-spacing: .1em;}
+h2 { font-family:'Poppins', sans-serif; margin:0px; padding:0px; font-weight:700; font-style:normal; font-smooth:always; font-size:1em; letter-spacing: .01em;}
+h3 { font-family:'Poppins', sans-serif; margin:0px; padding:0px; font-weight:normal; font-style:normal; font-smooth:always; font-size:1em; color: #EBD158;}
+h2 span{font-size: 0.9em;}
 #highlight-content h3.play-link { text-transform: uppercase; margin-top:20px; font-weight: 700; font-size: 1em;}
 #highlight-content h3.play-link:hover {  margin-top:20px; font-weight: 700; font-size: 1.1em; opacity: .7;}
-a {color:#fff; text-decoration:none;}
+.play-link a{color: #EBD158; }
+a {color: #fff; text-decoration:none;}
 p { line-height:1.7em;}
 .quote {font-family:"bg2ThinIt",arial,helvetica,sans-serif;}
 .post-script {font-family:"bg2Light",arial,helvetica,sans-serif;}
@@ -113,15 +114,15 @@ p { line-height:1.7em;}
 #about #about-copy { min-height:300px; }
 #about #about-copy #content-container {list-style-type:0px; margin:0px; padding:0px;}
 #about #about-copy #content-container li {display:none; opacity:0;}
-#about #about-copy #content-container li p {margin:50px 50px 30px 50px; font-size:0.8em;}
-#about #about-copy #content-container li p.post-script {font-size:1.2em; padding-bottom:50px; line-height:1.5em; margin-top:0px; margin-bottom:0px; text-align: center;}
-#about #about-copy #content-container li.current {display:block; opacity:1;}
+#about #about-copy #content-container li p {margin:50px 50px 30px 50px; font-size:0.8em; text-transform: none; letter-spacing: 0.01em;}
+#about #about-copy #content-container li p.post-script {font-size:1.2em; padding-bottom:50px; line-height:1.5em; margin-top:0px; margin-bottom:0px; text-align: center; }
+#about #about-copy #content-container li.current {display:block; opacity:1; }
 
 #about .services.outer { position:absolute; top:20px; right:350px; width:350px; min-height:100%; background-color:#EBD158;}
-#about .services.outer h1 {padding:47px 30px 20px 30px; font: 1em;}
+#about .services.outer h1 {padding:40px 30px 20px 30px; font: 1em;}
 #about .services.outer ul {list-style-type:none; padding:0px 30px; margin-top:0px;}
-#about .services.outer ul li {margin-bottom:25px;}
-#about .services.outer ul p {margin:0px; padding:0px; font-size:0.7em;}
+#about .services.outer ul li {margin-bottom:20px;}
+#about .services.outer ul p {margin:0px; padding:0px; font-size:0.77em; text-transform: none; letter-spacing: 0.015em;}
 
 
 #about .extra-wrap.outer { position:absolute; top:30px; right:30px; width:350px; min-height:100%; background-color:#3c3c3c;}
@@ -164,7 +165,7 @@ footer { margin-left:20%; font-family:'Poppins', sans-serif; font-size:0.7em; fo
 #footer-content { overflow:auto; height:100%; letter-spacing:0.09em; }
 #footer-content #copyright {float:left; margin:30px 0px 0px 3%;}
 #footer-content #connect {float:right; list-style-type:none; margin:30px 3% 0px 0px; padding:0px; }
-#footer-content #connect:hover {color: #EBD158; opacity: .7;}
+#footer-content #connect:hover { opacity: .7;}
 #footer-content #connect .new {display:inline;}
 #footer-content #connect li {float:left; margin:0px 5px; }
 #footer-content #connect li img {width:30%; height:auto; transform: translateX(40px);}
@@ -184,17 +185,12 @@ footer { margin-left:20%; font-family:'Poppins', sans-serif; font-size:0.7em; fo
 	/*collapse about section*/	
 	#wrap.about { height:auto; overflow:auto;}
 	#about { height:auto; position:relative; overflow:auto; background-color:#EBD158;}
-	
 	#about .profiles.outer { margin-right:350px; float:left; }
-	
 	#about .services.outer { position:absolute; top:0px; right:0px; width:350px; min-height:0px; height:auto;}
-	
 	#about .extra-wrap.outer { position:static; float:left; width:100%; min-height:auto; }
 	#about .extra-wrap #clients { min-height:200px; }
 	#about .extra-wrap #clients li {width:20%; float:left; text-align:center; height:70px}
 
-	
-	
 	
 }
 
@@ -223,8 +219,6 @@ footer { margin-left:20%; font-family:'Poppins', sans-serif; font-size:0.7em; fo
 @media only screen and (max-width:1200px)
 {	#web-nav {width:20%; background:url(images/bg2.jpg) repeat; background: #252627  repeat;opacity: .9; height:100%; overflow:auto; float:left; z-index:20; position:fixed; left:0px; min-height:600px;}
 	
-	
-	
 }
 
 /** CSS STYLES AT A PAGE WIDTH OF 1100 PIXELS ********************************/
@@ -232,7 +226,6 @@ footer { margin-left:20%; font-family:'Poppins', sans-serif; font-size:0.7em; fo
 
 @media only screen and (max-width:1100px)
 {	#web-nav {width:20%; background:url(images/bg2.jpg) repeat; background: #252627  repeat;opacity: .9; height:100%; overflow:auto; float:left; z-index:20; position:fixed; left:0px; min-height:600px;}
-	
 	
 	/* collapse work section */
 	#work .video {height:200px; width:50%; float:left;}
@@ -279,12 +272,10 @@ footer { margin-left:20%; font-family:'Poppins', sans-serif; font-size:0.7em; fo
 	#mobile-expand ul li .parent:hover {color:#EBD158; cursor:pointer; }
 	#mobile-expand ul a:hover {color:#EBD158;}
 	#hidden-nav { display:none; width:0px; height:100%; float:right; border-left:1px solid #ccc; background:url(images/bg2.jpg) fixed no-repeat ; background-color: #252627; opacity: .9; background-size:160px auto;}
-	#hidden-nav {}
 	#mobile-expand #menu .work-subs { list-style-type:none; position:absolute; top:27px; right:-130px; text-align:left;}
 	
 	/*** INDEX ***/
 	#highlight-content {top:50%; padding-top:25px;}
-	/* Extra percentage top above is half of the percentage height of the nav */
 	
 	/* WORK */
 	#work { margin-top:70px;}
@@ -551,4 +542,6 @@ footer { margin-left:20%; font-family:'Poppins', sans-serif; font-size:0.7em; fo
 	/*** NAVIGATION ***/
 	#web-nav #address {display:none;}
 }
+
+/* SHUBHRA MISHRA */
 
